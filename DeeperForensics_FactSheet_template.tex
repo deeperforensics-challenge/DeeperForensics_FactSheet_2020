@@ -1,0 +1,214 @@
+% last updated in April 2002 by Antje Endemann
+% Based on CVPR 07 and LNCS, with modifications by DAF, AZ and elle, 2008 and AA, 2010, and CC, 2011; TT, 2014; AAS, 2016
+
+\documentclass[runningheads]{llncs}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{amsmath,amssymb} % define this before the line numbering.
+\usepackage{ruler}
+\usepackage{color}
+\usepackage[width=122mm,left=12mm,paperwidth=146mm,height=193mm,top=12mm,paperheight=217mm]{geometry}
+\begin{document}
+% \renewcommand\thelinenumber{\color[rgb]{0.2,0.5,0.8}\normalfont\sffamily\scriptsize\arabic{linenumber}\color[rgb]{0,0,0}}
+% \renewcommand\makeLineNumber {\hss\thelinenumber\ \hspace{6mm} \rlap{\hskip\textwidth\ \hspace{6.5mm}\thelinenumber}}
+% \linenumbers
+\pagestyle{headings}
+\mainmatter
+
+\title{Title of the Contribution\\DeeperForensics Challenge 2020\\Fact Sheet} % Replace 'Title of the Contribution' with your title
+
+\titlerunning{DeeperForensics Challenge 2020}
+
+\authorrunning{DeeperForensics Challenge 2020}
+
+\author{DeeperForensics Team}
+\institute{\empty}
+
+\maketitle
+
+
+This fact sheet template\footnote{We acknowledge the nice fact sheet template provided by the Wider Challenge.} is meant to structure the description of the contributions made by each participating team in the DeeperForensics Challenge 2020. 
+%
+Ideally, all the aspects enumerated below should be addressed. The authenticity of the provided information and the achieved performance on the ``test-final'' data will be used to decide the awardees of the DeeperForensics Challenge 2020. The fact sheet will not be published. There is no page limit for the fact sheet.
+%
+After the final results are decided, the main winners will be invited to submit a more detailed paper of their method and the used data, i.e., technical report.
+
+
+\section{Team Details}
+
+\begin{spacing}{1.5}
+\begin{itemize}
+
+\item[$\bullet$] CodaLab user name
+
+DeeperForensics Avengers
+
+\item[$\bullet$] Team name (if any)
+
+DeeperForensics Avengers
+
+\item[$\bullet$] Team member names
+
+San Zhang, Si Li, Wu Wang, Isaac Newton, Albert Einstein
+
+\item[$\bullet$] Affiliation(s)
+
+Nanyang Technological University
+
+\item[$\bullet$] CodaLab email address
+
+deeperforensics@gmail.com
+
+\item[$\bullet$] Phone number
+
++86 13344445555
+
+\item[$\bullet$] Team website URL (if any)
+
+None
+
+\item[$\bullet$] AWS account id (12 digits) used for submission
+
+111122223333
+
+\item[$\bullet$] Best BCELoss score of the team in the development phase
+
+0.00001
+
+\item[$\bullet$] Final rank of the team in the development phase
+
+1
+
+\item[$\bullet$] Link to the codes/executables of the solution(s) (if any)
+
+**** we encourage the release of codes/executables for reproducibility (not mandatory) 
+
+\end{itemize}
+\end{spacing}
+
+\section{Contribution Details}
+\begin{spacing}{1.5}
+\begin{itemize}
+
+\item[$\bullet$] Title of the contribution
+
+A Novel Method for Real-world Face Forgery Detection
+
+\item[$\bullet$] General method description
+
+****
+
+\item[$\bullet$] Representative image / diagram of the method(s)
+
+****
+
+\end{itemize}
+\end{spacing}
+
+\section{Method and Data Details}
+\begin{spacing}{1.5}
+\begin{itemize}
+%\item[$\bullet$] Total method complexity: all stages
+
+\item[$\bullet$] Which pre-trained or external methods / models have been used (for any stage, if any)
+
+ResNet model pre-trained on ImageNet
+
+\item[$\bullet$] Which additional data has been used in addition to the provided DeeperForensics-1.0 dataset (at any stage, if any)
+
+XXX Dataset \cite{Alpher02}: Please specify the details (important).
+
+YYY Dataset \cite{Alpher03}: Please specify the details (important).
+
+\item[$\bullet$] Training description
+
+****
+
+\item[$\bullet$] Testing description
+
+****
+
+\item[$\bullet$] Results of the comparison to other approaches (if any)
+
+None
+
+\item[$\bullet$] Results on other standard benchmarks (if any)
+
+None
+
+\item[$\bullet$] Novelty degree of the solution and whether it has been previously published
+
+****
+
+\item[$\bullet$] Comment the robustness and generality of the proposed solution(s)?
+
+**** 
+
+\item[$\bullet$] Comment the efficiency of the proposed solution(s)?
+
+****
+
+\end{itemize}
+\end{spacing}
+
+\section{Ensembles and Fusion Strategies}
+\begin{spacing}{1.5}
+\begin{itemize}
+
+\item[$\bullet$] Describe in detail the use of ensembles and/or fusion strategies (if any). 
+
+****
+
+\item[$\bullet$] What was the benefit over the single method?
+
+****
+
+\item[$\bullet$] What were the baseline and the fused methods?
+
+****
+
+\end{itemize}
+\end{spacing}
+
+\section{Reproducibility Details}
+\begin{spacing}{1.5}
+\begin{itemize}
+\item[$\bullet$] Implementation details (including language, platform, parallelization and memory requirements)
+
+python, PyTorch, 8 GPUs (each with 10 GB memory consumption)
+
+\item[$\bullet$] Human effort required for implementation, training and validation?
+ 
+No
+
+\item[$\bullet$] Training/testing time?
+
+12h for training/0.512s for testing each video (not counting the pre-processing)
+
+
+\end{itemize}
+\end{spacing}
+
+\section{Feedback}
+\begin{spacing}{1.5}
+\begin{itemize}
+
+\item[$\bullet$] General comments on the DeeperForensics Challenge 2020.
+
+****
+
+\item[$\bullet$] What do you expect on a new competition of real-world face forgery detection/Deepfakes detection/face forensics?
+
+****
+
+\item[$\bullet$] Other comments (if any): encountered difficulties, fairness of the challenge, proposed tracks, proposed evaluation metric(s), proposed challenge platform, etc.
+
+****
+
+\end{itemize}
+\end{spacing}
+
+
+\bibliographystyle{splncs}
+\bibliography{egbib}
+\end{document}
